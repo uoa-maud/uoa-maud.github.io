@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAud Clinical Teaching Tools</title>
+<meta name="description" content="Clinical simulators, courses and assessment tools for the Master of Audiology programme, University of Auckland.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232563eb'/%3E%3Cpath d='M5 18h4l3-9 4 15 3-11 2 5h6' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f7f7f8; --card-bg: #ffffff; --text: #1a1a1a; --muted: #6b7280;
+    --accent: #2563eb; --border: #e5e7eb; --tag: #eef2ff; --tag-text: #3730a3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --card-bg: #1a1d24; --text: #e5e7eb; --muted: #9ca3af;
+      --accent: #60a5fa; --border: #2a2e37; --tag: #1e2a4a; --tag-text: #c7d2fe;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg); color: var(--text);
+    padding: 40px 16px 64px; line-height: 1.45;
+  }
+  header, main, footer { max-width: 920px; margin-left: auto; margin-right: auto; }
+  header { margin-bottom: 36px; }
+  header .kicker { color: var(--accent); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 6px; }
+  header h1 { font-size: 2rem; margin: 0 0 8px; }
+  header p { color: var(--muted); margin: 0; max-width: 640px; }
+  section { margin-bottom: 36px; }
+  section h2 {
+    font-size: 0.95rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em;
+    margin: 0 0 14px; border-bottom: 1px solid var(--border); padding-bottom: 8px;
+  }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+  a.card {
+    display: block; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px;
+    padding: 16px; text-decoration: none; color: var(--text);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); transform: translateY(-2px); outline: none; }
+  a.card .name { font-weight: 600; margin-bottom: 4px; }
+  a.card .desc { font-size: 0.88rem; color: var(--muted); }
+  .tag { display: inline-block; font-size: 0.72rem; font-weight: 600; background: var(--tag); color: var(--tag-text); border-radius: 999px; padding: 1px 8px; margin-left: 6px; vertical-align: 2px; }
+  a.card.featured { border-left: 4px solid var(--accent); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); padding-top: 16px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <p class="kicker">Master of Audiology · University of Auckland</p>
+  <h1>MAud Clinical Teaching Tools</h1>
+  <p>Simulators, courses and assessment tools for building clinical skills in audiology and vestibular assessment. Everything runs in the browser, with nothing to install.</p>
+</header>
+
+<main>
+  <section>
+    <h2>MAud programme</h2>
+    <div class="grid">
+      <a class="card featured" href="https://uoa-maud.github.io/maud-project/">
+        <div class="name">MAud Clinical Assessment</div>
+        <div class="desc">Skill and milestone progression, supervisor session feedback, and logging supervised clinical hours</div>
+      </a>
+      <a class="card featured" href="https://uoa-maud.github.io/maud-checklist/">
+        <div class="name">MAud Clinical Checklist</div>
+        <div class="desc">Clinical competency checklist with tips and links to the matching simulators</div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Audiology simulators</h2>
+    <div class="grid">
+      <a class="card" href="https://uoa-maud.github.io/history-taking-simulator/">
+        <div class="name">History Taking</div>
+        <div class="desc">Case-history interview practice with an AI patient or caregiver</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/otoscopy/">
+        <div class="name">Otoscopy</div>
+        <div class="desc">Otoscopic examination practice</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/pta-simulator/">
+        <div class="name">Pure-Tone Audiometry</div>
+        <div class="desc">Air and bone conduction thresholds with masking</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/play-simulator/">
+        <div class="name">Play Audiometry</div>
+        <div class="desc">Conditioned play audiometry with a child behaviour model</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/speech-testing-simulator/">
+        <div class="name">Speech Testing</div>
+        <div class="desc">Speech audiometry practice</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/immittance-simulator/">
+        <div class="name">Immittance</div>
+        <div class="desc">Tympanometry and acoustic reflex testing</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/dpoae-simulator/">
+        <div class="name">DPOAEs</div>
+        <div class="desc">Distortion product otoacoustic emissions</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/abr-simulator/">
+        <div class="name">ABR</div>
+        <div class="desc">Eclipse-style ABR recording with a literature-calibrated physiology model</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/GIN/GIN_2AFC.html">
+        <div class="name">Gaps-in-Noise (GIN)</div>
+        <div class="desc">Gaps-in-noise temporal resolution test</div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Vestibular</h2>
+    <div class="grid">
+      <a class="card" href="https://uoa-maud.github.io/vor-simulator/">
+        <div class="name">VOR Simulator</div>
+        <div class="desc">Vestibulo-ocular reflex testing</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/labyrinth-model-lab/">
+        <div class="name">Labyrinth Model Lab</div>
+        <div class="desc">Interactive 3D model of the membranous labyrinth for teaching vestibular anatomy</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/labyrinth-model-lab/spinning-glass.html">
+        <div class="name">The Spinning Glass</div>
+        <div class="desc">How endolymph moves the cupula, shown with a turning glass of water</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/bppv-simulator/">
+        <div class="name">BPPV Simulator <span class="tag">older</span></div>
+        <div class="desc">The original BPPV simulator, superseded by the VOR Simulator</div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Courses</h2>
+    <div class="grid">
+      <a class="card" href="https://uoa-maud.github.io/waves_to_hearing/">
+        <div class="name">Waves to Hearing</div>
+        <div class="desc">12 modules on sound physics and psychoacoustics, with listening demos and self-check quizzes</div>
+      </a>
+      <a class="card" href="https://uoa-maud.github.io/psychoacoustics/">
+        <div class="name">Psychoacoustics</div>
+        <div class="desc">Did you hear it, or did you just say yes? Psychoacoustics demonstrations</div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>For teaching staff</h2>
+    <div class="grid">
+      <a class="card" href="https://uoa-maud.github.io/case-maker/">
+        <div class="name">Case-maker</div>
+        <div class="desc">Build one teaching case and publish it to every simulator</div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Maintained by the Master of Audiology teaching team ·
+  <a href="https://github.com/uoa-maud">github.com/uoa-maud</a>
+</footer>
+</body>
+</html>
